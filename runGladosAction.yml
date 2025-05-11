@@ -28,4 +28,6 @@ jobs:
         env: 
           GLADOS_COOKIE: "${{ secrets.GLADOS_COOKIE }}"
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
-      - uses: gautamkrishnar/keepalive-workflow@master  
+          
+      - name: Keep workflow alive (替代 keepalive-workflow)
+        run: echo "Workflow ran successfully on $(date)"
