@@ -26,7 +26,7 @@ jobs:
         run: |
           python3 glados.py
         env: 
-          GLADOS_COOKIE: "${{ secrets.GLADOS_COOKIE }}"
+          GLADOS_COOKIE: "${{ secrets.COOKIES }}"
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
       
       - name: Keep workflow alive (替代 keepalive-workflow)
